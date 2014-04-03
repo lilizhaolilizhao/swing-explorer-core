@@ -94,6 +94,7 @@ public class Launcher implements Runnable {
         	personalizerRegistry.addPersonalizer("tblEvents", new TablePersonalizer("eventTableColumnSizes"));
         	personalizerRegistry.addPersonalizer("pnlEventProperties.tblProperties", new TablePersonalizer("eventDetailTableColumnSizes"));
         	personalizerRegistry.addPersonalizer("pnlPropertySheet.tblProperties", new TablePersonalizer("propertyTableColumnSizes"));
+        	
         }
         	// open frame
         	frmMain.setVisible(true);
