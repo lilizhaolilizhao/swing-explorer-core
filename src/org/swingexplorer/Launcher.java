@@ -41,7 +41,7 @@ import org.swingexplorer.plaf.PlafUtils;
 
 
 /**
- * 
+ * this is just a test
  * @author Maxim Zakharenkov
  */
 public class Launcher implements Runnable {
