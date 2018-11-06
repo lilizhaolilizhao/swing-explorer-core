@@ -138,14 +138,14 @@ public class Launcher implements Runnable {
             "  java -javaagent:swag.jar -Xbootclasspath/a:swag.jar -cp swexpl.jar;[<your_class_path>] org.swingexplorer.Launcher <your_main_class>\n";
     
 	public static void main(String[] args) {
-        
         Method mainMethod = null;
         Class<?> mainClass = null;
         String[] newArgs = null;
         
 //        String[] argss = {"com.raisecom.nms.platform.client.RunDebug"};
-//        String[] args = {"sample.FRMPerson"};
-        
+//        args = new String[]{"us.deathmarine.luyten.Luyten","org.swingexplorer.Launcher"};
+        args = new String[]{"sample.FRMPerson","org.swingexplorer.Launcher"};
+
         // launching Swing explorer
         final Launcher app = new Launcher();
         try {
@@ -162,7 +162,7 @@ public class Launcher implements Runnable {
     		
     		newArgs = new String[args.length - 1];
     		for (int i = 0; i < newArgs.length; i++) {
-    			newArgs[i] = args[i + 1];
+				newArgs[i] = args[i + 1];
     		}
     		
     		try {
